@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="bg">
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rocket Studio Task</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/menu.js"></script>
+	  <script src="js/filter.js"></script>
+	  <script src="js/content-load.js"></script>
+      <link rel="icon" href="images/fav.svg" type="image/svg+xml">
+   </head>
+   <body>
+      <header>
+         <div class="header-top">
+            <div class="header-top-wrapper">
+               <ul class="details contact">
+                  <li class="mail">
+                     OFFICE@ASPIRATOR.BG
+                  </li>
+                  <li class="phone">0882 62 38 31 </li>
+               </ul>
+               <ul class="details lang">
+                  <li class="lang arrow-down-tiny">
+                     Bulgarian<span class="arrow down">.</span>
+                  </li>
+                  <li class="user-alt arrow-down-tiny">
+                     Акаунт
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="header-navigate">
+            <div class="header-navigate-wrapper">
+               <div class="mob-header-wrapper">
+                  <div class="menu-open">
+                     <div class="burger-line"></div>
+                  </div>
+                  <a class="logo"> <img src="images\logo.svg"></a>
+               </div>
+               <div class="header-navigate-status">
+                  <div class="label"><span class="ico delivery">.</span><span class="text">Безплатна Доставка!</span></div>
+                  <div class="search-section">
+                     <input type="text" placeholder="Търсене">
+                     <button class="btn btn-submit" type="submit">
+                     <span title="Търсене" class="ico search">.</span>
+                     </button>
+                  </div>
+                  <ul class="status-section">
+                     <li class="products"><span class="ico circle love"><i>1</i>.</span><span class="ico circle cart"><i class="highlight">2</i></span></li>
+                     <li class="total">
+                        <span class="label">Кошница</span> 
+                        <div class="price"><span class="price-amount">
+                           599 <sup>00</sup></span><span class="price-currency">лв.</span>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <nav>
+            <div class="holder">
+               <ul class="menu">
+                  <li class="active">
+                     <span class="ico menu">.</span><a>Категории</a>
+                     <div class="dropdown-menu">
+                        <ul class="menu-columns">
+                           <li>
+                              <div class="btn backbtntext" >НАЗАД</div>
+                              <div>
+                                 <a class="category-title"><span class="sub-menu-icon hood"></span>Аспирарори                                               </a>
+                                 <ul class="menu-third">
+                                    <li><a>Шумопонижаващи системи за аспиратори - Въздуховоди       </a></li>
+                                    <li><a>Downdraft аспиратори                                     </a></li>
+                                    <li><a>Аспиратори за вграждане                                  </a></li>
+                                    <li><a>Декоративни аспиратори (за стенен монтаж)                </a></li>
+                                    <li><a>Островни аспиратори                                      </a></li>
+                                    <li><a>Ретро аспиратори                                         </a></li>
+                                    <li><a>Традиционни аспиратори (под шкаф)                        </a></li>
+                                    <li><a>Ъглови аспиратори                                        </a></li>
+                                 </ul>
+                              </div>
+                              <div>
+                                 <a class="category-title"><span class="sub-menu-icon dishwasher">.</span>Съдомиялни</a>
+                                 <ul class="menu-third">
+                                    <li><a>Свободностоящи съдомиялни                                 </a></li>
+                                    <li><a>Съдомиялни за вграждане                                   </a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <a class="category-title"><span class="sub-menu-icon coffee-machine"></span>Плотове за вграждане</a>
+                                 <ul class="menu-third">
+                                    <li><a>Газови плотове                                           </a></li>
+                                    <li><a>за вграждане                                             </a></li>
+                                    <li><a>Индукционни плотове                                      </a></li>
+                                    <li><a>Комбинирани плотове                                      </a></li>
+                                    <li><a>Ретро плотове                                            </a></li>
+                                    <li><a>Стъклокерамични плотове                                  </a></li>
+                                    <li><a>Ретро аспиратори                                         </a></li>
+                                    <li><a>Други                                                    </a></li>
+                                 </ul>
+                              </div>
+                              <div>
+                                 <a class="category-title"><span class="sub-menu-icon washer"></span>Перални и сушилни</a>
+                                 <ul class="menu-third">
+                                    <li><a>Перални машини                                            </a></li>
+                                    <li><a>Перални със сушилни                                       </a></li>
+                                    <li><a>Сушилни машини                                            </a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <a class="category-title"><span class="sub-menu-icon electric-stove"></span>Фурни за вграждане</a>
+                                 <ul class="menu-third">
+                                    <li></li>
+                                    <li><a>Кафемашини за вграждане                                   </a></li>
+                                    <li><a>Микровълнови за вграждане                                 </a></li>
+                                    <li><a>Ретро фурни                                               </a></li>
+                                    <li><a>Свободностоящи микровълнови                               </a></li>
+                                    <li><a>Фурни за вграждане                                        </a></li>
+                                    <li><a>на 60 см                                                  </a></li>
+                                    <li><a>Фурни за вграждане                                        </a></li>
+                                    <li><a>на 90 см                                                  </a></li>
+                                    <li><a>Фурни на пара                                             </a></li>
+                                    <li><a>Фурни с пиролиза                                          </a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <a class="category-title"><span class="sub-menu-icon induction-stove"></span>Дребна техника</a>
+                                 <ul class="menu-third">
+                                    <li><a>Електрически кани                                         </a></li>
+                                    <li><a>Кафемашини                                                </a></li>
+                                    <li><a>Кухненски роботи                                          </a></li>
+                                    <li><a>Месомелачки                                               </a></li>
+                                    <li><a>Миксери                                                   </a></li>
+                                    <li><a>Пасатори и блендери                                       </a></li>
+                                    <li><a>Прахосмукачки                                             </a></li>
+                                    <li><a>Сокоизтисквачки                                           </a></li>
+                                    <li><a>Тостери                                                   </a></li>
+                                    <li><a>Хлебопекарни                                              </a></li>
+                                    <li><a>Ютии и парни станции                                      </a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <ul class="menu-third">
+                                    <li><a class="category-title"><span class="sub-menu-icon sink"></span>Кухненски мивки</a></li>
+                                    <li><a>Иноксови мивки                                           </a></li>
+                                    <li><a>Композитни мивки                                         </a></li>
+                                    <li><a>( гранитни мивки )                                       </a></li>
+                                    <li><a>Кухненски мелници за отпадъци - Хидро Диспозер           </a></li>
+                                    <li><a>Кухненски смесители                                      </a></li>
+                                 </ul>
+                              </div>
+                              <div>
+                                 <ul class="menu-third">
+                                    <li><a class="category-title">  <span class="sub-menu-icon fridge"></span>Хладилници</a></li>
+                                    <li><a>Хладилник Side by Side                                   </a></li>
+                                    <li><a>Виноохладители                                           </a></li>
+                                    <li><a>Хладилници за вграждане                                  </a></li>
+                                    <li><a>Свободностоящи хладилници                                </a></li>
+                                    <li><a>Фризери                                                  </a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li>
+                              <div>
+                                 <a class="category-title">Производители</a>
+                                 <ul class="providers menu-third">
+                                    <li><a><span class="ico provider-3 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-4 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-5 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-6 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-7 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-8 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-9 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-10">.</span></a></li>
+                                    <li><a><span class="ico provider provider-11">.</span></a></li>
+                                    <li><a><span class="ico provider provider-12">.</span></a></li>
+                                    <li><a><span class="ico provider provider-13">.</span></a></li>
+                                    <li><a><span class="ico provider provider-14">.</span></a></li>
+                                    <li><a><span class="ico provider provider-15">.</span></a></li>
+                                    <li><a><span class="ico provider provider-16">.</span></a></li>
+                                    <li><a><span class="ico provider provider-17">.</span></a></li>
+                                    <li><a><span class="ico provider provider-18">.</span></a></li>
+                                    <li><a><span class="ico provider provider-19">.</span></a></li>
+                                    <li><a><span class="ico provider provider-20">.</span></a></li>
+                                    <li><a><span class="ico provider provider-21">.</span></a></li>
+                                    <li><a><span class="ico provider provider-22">.</span></a></li>
+                                    <li><a><span class="ico provider provider-1 ">.</span></a></li>
+                                    <li><a><span class="ico provider provider-2 ">.</span></a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li><a>Специална оферта</a></li>
+                  <li><a>За Нас          </a></li>
+                  <li><a>Новини          </a></li>
+                  <li><a>Контакти        </a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="header-intro">
+            <h1>АСПИРАТОРИ</h1>
+         </div>
+      </header>
+      <main >
+         <div class="header-status">
+            <ul>
+            <li class="arrow-next-tiny">Начало</li>
+            <li>АСПИРАТОРИ</li>
+            </ul>
+         </div>
+         <div class="main-content-columns">
+            <div class="middle-main-row">
+               <aside>
+                  <div class="btn colored filters">Филтри</div>
+                  <form name="filter" action="?" method="get" id="price-form" class="form">
+                     <div class="active-filters-section">
+                        <div class="filter-title highlighted">активни филтри</div>
+                        <ul class="active-filters">
+                           <li class="section-filters">
+                              <div class="section-title">Тип на Аспиратора</div>
+                              <div class="section-filter-names">
+                                 <div>Аспиратори за вграждане с телескопично отваряне</div>
+                                 <span class="ico close">.</span>
+                              </div>
+							  </li>
+                        </ul>
+                        </li>
+                     </div>
+                     <div class="all-filters-section">
+                        <div class="filter-section">
+                           <div class="filter-title">
+                              <div>Ценови диапазон</div>
+                              <span class="ico filter-open"></span>
+                           </div>
+                           <div class="section-limits">
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0">лв.</div>
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0">лв.</div>
+                           </div>
+                        </div>
+                        <div class="filter-section">
+                           <div class="filter-title">
+                              <div>Цвят</div>
+                              <span class="ico plus"></span>
+                           </div>
+                           <div class="section-limits">
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0.00">лв.</div>
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0.00">лв.</div>
+                           </div>
+                        </div>
+                        <div class="filter-section">
+                           <div class="filter-title">
+                              <div>Широчина в см.</div>
+                              <span class="ico minus"></span>
+                           </div>
+                           <div class="section-limits">
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0.00">лв.</div>
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0.00">лв.</div>
+                           </div>
+                        </div>
+                        <div class="filter-section">
+                           <div class="filter-title">
+                              <div>Диаметър на изходна тръба ø</div>
+                              <span class="ico minus"></span>
+                           </div>
+                           <div class="section-limits">
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0.00">лв.</div>
+                              <div class="limit">Мин:<input type="number" inputmode="decimal" class="filter-input filter-min" value="0.00">лв.</div>
+                           </div>
+                        </div>
+                        <div class="filter-section">
+                           <div class="filter-title">
+                              <div>Ценови диапазон</div>
+                              <span class="ico minus"></span>
+                           </div>
+                           <div class="section-types">
+                              <ul>
+                                 <li>Всички</li>
+                                 <li class="active">индукционен</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </aside>
+               <div class="content">
+               
+                  <div class="carousel-wrapper">
+                     <div class="carousel">
+                        <div class="scroll-arrow" id="scroll-left">
+                           .
+                        </div>
+                        <ul id="imgList">
+                           <li><img src="images\category1.jpg" alt="placeholder" width="266" height="125"><span>Шумопонижаващи системи за аспиратори -Въздуховоди</span></li>
+                           <li><img src="images\category2.jpg" alt="placeholder" width="266" height="125"><span>Downdraft аспиратори</span></li>
+                           <li><img src="images\category3.jpg" alt="placeholder" width="266" height="125"><span>Аспиратори за вграждане</span></li>
+                           <li><img src="images\category4.jpg" alt="placeholder" width="266" height="125"><span>Декоративни аспиратори (за стенен монтаж)</span></li>
+                           <li><img src="images\category3.jpg" alt="placeholder" width="266" height="125"> <span>Шумопонижаващи системи за аспиратори -Въздуховоди</span></li>
+                           <li><img src="images\category2.jpg" alt="placeholder" width="266" height="125"> <span>Downdraft аспиратори</span></li>
+                           <li><img src="images\category1.jpg" alt="placeholder" width="266" height="125"> <span>Аспиратори за вграждане</span></li>
+                           <li><img src="images\category1.jpg" alt="placeholder" width="266" height="125"> <span>Декоративни аспиратори (за стенен монтаж)</span></li>
+                           <li></li>
+                        </ul>
+                        <div class="scroll-arrow" id="scroll-right">
+                           .
+                        </div>
+                     </div>
+                  </div>
+				  <div class="products-holder">
+                  <!--<div class="products">
+                    
+                     <article>
+                        <div class="img-section">
+                           <img src="images\products\Rectangle 518.jpg" alt="placeholder" width="266" height="152">
+                           <span class="discount">7%</span>
+                           <div class="operations"><span class="ico circle love">.</span><span class="ico circle exchange">.</span></div>
+                        </div>
+                        <div class="description-section">
+                           <h3>How to Remove a Hacker from Your Samsung
+                              Phone
+                           </h3>
+                           <p>Samsung is the second most popular
+                              manufacturer of smartphones in the world,
+                              with a market share of 28.19% compared to
+                              Apple’s 28.43% as...
+                           </p>
+                           <div class="rating r4">.</div>
+                        </div>
+                        <div class="price-add-section">
+                           <div class="price"><span class="price-amount">
+                              599 <sup>00</sup></span><span class="price-currency">лв.</span>
+                           </div>
+                           <div class="price-old">700 лв. 
+                           </div>
+                           <span class="ico add-to-cart cart-white">.</span>
+                        </div>
+                     </article>
+                  </div> -->
+				  </div>
+               </div>
+            </div>
+            <div class="pagination">
+               <a  onClick={prevPage}><span class="prev">.</span></a>
+               <ul class="page-numbers">
+                  <li class="current">1</li>
+                  <li>2</li>
+                  <li>3</li>
+               </ul>
+               <a class="next enabled"><span class="next">.</span></a>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer-container">
+            <div class="subscribe-section">
+               <form class="subscribe-form">
+                  <div class="text-conteiner">
+                     <h3>Научавай първи за
+                        нови продукти и промоции!
+                     </h3>
+                  </div>
+                  <div class="submit-section">
+                     <input type="text" placeholder="Въведете Име">
+                     <input type="text" placeholder="Въведете Email">
+                     <input type="submit"  class="btn" value="Абонирай се">
+                  </div>
+               </form>
+            </div>
+            <div class="footer-menu-section">
+               <ul class="footer-menu">
+                  <li>
+                     <h4>За Нас</h4>
+                     <p>AspiratorBG е специализиран онлайн магазин за уреди за вграждане (аспиратори, фурни, стъклокерамични плотове, мивки, хладилници, съдомиялни …)</p>
+                  </li>
+                  <li>
+                     <h4>Полезни линкове</h4>
+                     <ul>
+                        <li><a>Начало   </a></li>
+                        <li><a>Категории</a></li>
+                        <li><a>За Нас   </a></li>
+                        <li><a>Новини   </a></li>
+                        <li><a>Контакти </a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <h4>Информация</h4>
+                     <ul>
+                        <li><a>Условия за доставка      </a></li>
+                        <li><a>Условия за ползване      </a></li>
+                        <li><a>Политика на поверителност</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <h4>Информация</h4>
+                     <ul class="menu-contact">
+                        <li class="phone">OFFICE@ASPIRATOR.BG</li>
+                        <li class="mail">0882 62 38 31      </li>
+                        <li class="fb">Aspirator.bg       </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer-copyright">
+			<!-- <div class="label"><span class="text">Изработено от</span><span class="ico rocket-studio">.</span></div> -->
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
