@@ -80,7 +80,7 @@ header {
 }
 footer {
   color: white;
-  background: #444444;
+  background: #383b3e;
   width: 100%;
 }
 aside {
@@ -88,7 +88,7 @@ aside {
   display: flex;
   flex-direction: column;
   top: 500px;
-  color: #444444;
+  color: #383b3e;
 }
 main {
   padding: 0 0 50px 0;
@@ -104,7 +104,7 @@ h1 {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: center;
-  color: #444444;
+  color: #383b3e;
 }
 
 /* MENU */
@@ -121,16 +121,16 @@ nav ul.menu > li > a {
   text-align: left;
 }
 nav ul.menu li:hover a {
-  color: #444444;
+  color: #383b3e;
 }
 nav ul.menu li.active:hover > a {
   color: #fff;
 }
 nav ul.menu li.active {
-  border-top: 11px solid #444444;
+  border-top: 11px solid #383b3e;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  background: #444444;
+  background: #383b3e;
   align-self: flex-end;
   color: #fff;
 }
@@ -193,7 +193,7 @@ span.icon {
   align-items: center;
   justify-content: center;
   height: 60px;
-  background: #444444;
+  background: #383b3e;
   width: 195px;
   height: 60px;
   border-radius: 6px;
@@ -243,7 +243,7 @@ span.icon {
   width: 100%;
   display: flex;
   height: 40px;
-  background-color: #444444;
+  background-color: #383b3e;
   justify-content: center;
   align-items: center;
 }
@@ -884,7 +884,7 @@ form#price-form {
   width: 70px;
   height: 32px;
   border-radius: 6px;
-  background: #f5f5f5;
+  background: #ededed;
   display: inline-flex;
   text-align: right;
   align-content: center;
@@ -966,6 +966,7 @@ ul.navigation-types {
 }
 .pagination span.prev {
   background-image: url("img/pagination-prev.svg");
+  filter: brightness(0.7);
 }
 .next {
   right: 0;
@@ -974,6 +975,7 @@ ul.navigation-types {
 }
 .pagination span.next {
   background-image: url("img/pagination-next.svg");
+  filter: brightness();
 }
 .img-section {
   position: relative;
@@ -1020,6 +1022,11 @@ ul.navigation-types {
 .add-to-cart {
   background: #d10037;
 }
+.add-to-cart:hover,
+.btn-submit:hover {
+  background: #a7002d;
+}
+
 .price-add-section {
   display: flex;
   justify-content: space-around;
@@ -1073,7 +1080,7 @@ article h3 {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  color: #444444;
+  color: #383b3e;
   display: flex;
   max-width: 380px;
   flex-wrap: wrap;
@@ -1124,7 +1131,7 @@ article h3 {
   align-items: center;
 }
 .submit-section .btn {
-  background: #444444;
+  background: #383b3e;
   width: 195px;
   height: 60px;
   border-radius: 6px;
@@ -1168,7 +1175,7 @@ ul.page-numbers li,
   font-size: 20px;
   font-weight: 700;
   line-height: 40px;
-  background: #ececec;
+  background: #d7d7d7;
   border-radius: 9px;
   text-align: center;
   color: #444;
@@ -1191,12 +1198,24 @@ div.pagination {
   gap: 15px;
 }
 .pagination a {
-  border: 2px solid #ececec;
+  border: 2px solid #bfbfbf;
   position: initial;
   background: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.pagination a.next {
+  border: 2px solid #d10037;
+}
+.pagination a:hover {
+  background: #bfbfbf;
+}
+.pagination a:hover span.prev {
+  filter: brightness(100);
+}
+.pagination a:hover span.next {
+  filter: grayscale(1);
 }
 .pagination a.enabled {
   border: 2px solid #d10037;
@@ -1271,7 +1290,7 @@ footer h4:after {
   width: 224px;
   height: 42px;
   border-radius: 6px;
-  background: #444444;
+  background: #383b3e;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -1311,7 +1330,7 @@ footer h4:after {
 ul.menu-columns a.category-title {
   display: flex;
   gap: 15px;
-  color: #444444;
+  color: #383b3e;
   font-size: 20px;
   font-weight: 700;
   line-height: 22px;
@@ -1691,6 +1710,7 @@ nav ul.menu.show > li.active > a {
 }
 nav ul.menu > li.active {
   padding: 0 32px;
+  box-sizing: initial;
 }
 
 .footer-copyright span.text {
@@ -1825,11 +1845,14 @@ nav ul.menu > li.active {
   .menu-open {
     float: right;
   }
+  ul.menu {
+    margin: 0;
+    max-width: 100%;
+    display: none;
+  }
 }
-ul.menu {
-  margin: 0;
-  max-width: 100%;
-  display: none;
+.category-title {
+  margin: 20px;
 }
 .menu li:hover:after,
 .menu li.active:after,
@@ -1848,9 +1871,6 @@ span.text {
 }
 .footer-menu li p {
   max-width: auto;
-}
-.footer-menu li {
-  /* align-items: center; */
 }
 
 @media screen and (max-width: 690px) {
