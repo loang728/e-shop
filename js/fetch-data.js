@@ -1,10 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() { 
+  var currentPageNumber = 1;
+const itemsPerPage = 5;
+
 // Fetching data using fetch and async/await
 const fetchData = async () => {
   try {
     const response = await fetch("data.json"); // Fetch data from local JSON file
     const json = await response.json();
     return json; // Return the entire JSON data from the file
-    console.log(json);
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];
@@ -14,15 +17,25 @@ const fetchData = async () => {
 // Function to filter and display  data
 const displayProductData = async () => {
   const jsonData = await fetchData();
-  console.log(jsonData);
-
   const productsData = jsonData.data;
 
   //Pagination
   const ulElement = document.createElement("div");
   ulElement.classList.add("products");
-  const itemsPerPage = 5;
-  var currentPageNumber=1;
+
+  const prevButton = document.querySelector(".pagination a.prevButton");
+  prevButton.addEventListener("click", () => {
+    currentPageNumber > 1 ? (currentPageNumber = currentPageNumber - 1) : {};
+    upDateContentandPage();
+  });
+
+  const nextButton = document.querySelector(".pagination a.nextButton");
+  nextButton.addEventListener("click", () => {
+    currentPageNumber < totalPages
+      ? (currentPageNumber = currentPageNumber + 1)
+      : {};
+    upDateContentandPage();
+  });
 
   function displayItems(pageNumber) {
     const startIndex = (pageNumber - 1) * itemsPerPage;
@@ -66,35 +79,33 @@ const displayProductData = async () => {
     for (let i = 1; i <= totalPages; i++) {
       const button = document.createElement("li");
       button.textContent = i;
-      currentPageNumber=i;
       button.addEventListener("click", () => {
-        displayItems(i);
-        currentPageNumber=i;
+        currentPageNumber = i;
+        upDateContentandPage();
       });
       paginationContainer.appendChild(button);
     }
-   
   }
-  
-
-
-
-  const prevButton = document.querySelector(".pagination a.prevButton");
-  prevButton.addEventListener("click", () => {
-    (currentPageNumber>1)? currentPageNumber= currentPageNumber-1: {} ;
-    displayItems(currentPageNumber);
-    alert(currentPageNumber)
-  });
-  
-
 
   // Initial display
-  displayItems(1);
-  // Calculate total pages
   const totalPages = Math.ceil(productsData.length / itemsPerPage);
 
-  // Display pagination buttons
+  function addClassToLi(page) {
+    $("ul.page-numbers li").removeClass("current");
+    $("ul.page-numbers li")
+      .eq(page - 1)
+      .addClass("current");
+  }
+  function upDateContentandPage() {
+    displayItems(currentPageNumber);
+    addClassToLi(currentPageNumber);
+  }
+
+  upDateContentandPage();
   displayPaginationButtons(totalPages);
+  addClassToLi(currentPageNumber);
 };
 
 displayProductData();
+
+});
