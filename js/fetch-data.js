@@ -11,7 +11,7 @@ const fetchData = async () => {
   }
 };
 
-// Function to filter and display cryptocurrency data
+// Function to filter and display  data
 const displayProductData = async () => {
   const jsonData = await fetchData();
   console.log(jsonData);
@@ -22,6 +22,7 @@ const displayProductData = async () => {
   const ulElement = document.createElement("div");
   ulElement.classList.add("products");
   const itemsPerPage = 5;
+  var currentPageNumber=1;
 
   function displayItems(pageNumber) {
     const startIndex = (pageNumber - 1) * itemsPerPage;
@@ -65,12 +66,27 @@ const displayProductData = async () => {
     for (let i = 1; i <= totalPages; i++) {
       const button = document.createElement("li");
       button.textContent = i;
+      currentPageNumber=i;
       button.addEventListener("click", () => {
         displayItems(i);
+        currentPageNumber=i;
       });
       paginationContainer.appendChild(button);
     }
+   
   }
+  
+
+
+
+  const prevButton = document.querySelector(".pagination a.prevButton");
+  prevButton.addEventListener("click", () => {
+    (currentPageNumber>1)? currentPageNumber= currentPageNumber-1: {} ;
+    displayItems(currentPageNumber);
+    alert(currentPageNumber)
+  });
+  
+
 
   // Initial display
   displayItems(1);

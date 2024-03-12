@@ -88,6 +88,96 @@
     "price": 129.99,
     "newPrice": 109.99,
     "image": "product10.jpg"
+  },{
+    "id": 1,
+    "title": "Product 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.5,
+    "price": 29.99,
+    "newPrice": 24.99,
+    "image": "product1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "rating": 3.8,
+    "price": 49.99,
+    "newPrice": 39.99,
+    "image": "product2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "rating": 4.2,
+    "price": 79.99,
+    "newPrice": 64.99,
+    "image": "product3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "rating": 4.9,
+    "price": 119.99,
+    "newPrice": 99.99,
+    "image": "product4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "rating": 3.5,
+    "price": 39.99,
+    "newPrice": 34.99,
+    "image": "product5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Product 6",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "rating": 4.7,
+    "price": 89.99,
+    "newPrice": 74.99,
+    "image": "product6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Product 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "rating": 4.0,
+    "price": 59.99,
+    "newPrice": 49.99,
+    "image": "product7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Product 8",
+    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "rating": 3.2,
+    "price": 69.99,
+    "newPrice": 54.99,
+    "image": "product8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Product 9",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "rating": 4.5,
+    "price": 99.99,
+    "newPrice": 84.99,
+    "image": "product9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Product 10",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "rating": 3.9,
+    "price": 129.99,
+    "newPrice": 109.99,
+    "image": "product10.jpg"
   }
+  
 ]
 }

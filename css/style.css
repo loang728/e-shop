@@ -964,7 +964,11 @@ ul.navigation-types {
   left: 0;
   background-image: url("img/left.svg");
 }
-.pagination span.prev {
+.pagination  span.prev {
+  background-image: url("img/pagination-prev.svg");
+  filter: brightness(0.7);
+}
+.pagination .enabled span.prev {
   background-image: url("img/pagination-prev.svg");
   filter: brightness(0.7);
 }
