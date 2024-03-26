@@ -37,6 +37,13 @@ const displayProductData = async () => {
     upDateContentandPage();
   });
 
+  function calculateDiscountPercentage(originalPrice, newPrice) {
+    const discount = originalPrice - newPrice;
+    const discountPercentage = (discount / originalPrice) * 100;
+    return discountPercentage.toFixed(0); 
+}
+
+
   function displayItems(pageNumber) {
     const startIndex = (pageNumber - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
@@ -45,8 +52,8 @@ const displayProductData = async () => {
     const itemsElements = currentItems.map((item) => {
       return `<article>
     <div class="img-section">
-      <img src="images/products/Rectangle 518.jpg" alt="placeholder" width="266" height="152">
-      <span class="discount">7%</span>
+      <img src="images/products/${item.filename}" alt="placeholder" width="266" height="152">
+      <span class="discount">${calculateDiscountPercentage(item.price,item.newPrice)} %</span>
       <div class="operations">
         <span class="ico circle love">.</span>
         <span class="ico circle exchange">.</span>
@@ -55,7 +62,7 @@ const displayProductData = async () => {
     <div class="description-section">
       <h3>${item.title}</h3>
       <p>${item.description}</p>
-      <div class="rating">.</div>
+      <div class="rating ${(item.rating<5)? 'r4':''}">.</div>
     </div>
     <div class="price-add-section">
       <div class="price">

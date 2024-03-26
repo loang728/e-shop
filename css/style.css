@@ -120,8 +120,8 @@ nav ul.menu > li > a {
   letter-spacing: 0em;
   text-align: left;
 }
-nav ul.menu li:hover a {
-  color: #383b3e;
+nav ul.menu>li:hover>a {
+  color: #ffbe04;
 }
 nav ul.menu li.active:hover > a {
   color: #fff;
@@ -494,7 +494,7 @@ ul.menu-contact li:before {
   width: 10px;
   height: 10px;
   padding: 10px;
-  background-clip: content-box;
+  /* background-clip: content-box; */
   content: "";
   top: 1px;
   background-repeat: no-repeat;
@@ -523,13 +523,15 @@ ul li.phone:before {
   background-image: url("img/phone.svg");
   width: 10px;
   height: 10px;
-  background-position: 0 0;
 }
 ul li.fb:before {
   background-image: url("img/fb.svg");
   width: 10px;
   height: 10px;
+  background-position: 7px 5px;
 }
+.footer-menu-section ul li.mail:before {background-position: 5px 5px;}
+.footer-menu-section ul li.phon:before {background-position: 5px 5px;}
 
 .header-navigate {
   display: flex;
@@ -558,6 +560,9 @@ span.circle {
   width: 60px;
   height: 60px;
   border-radius: 50px;
+}
+span.circle:hover {
+background-color:#d10037;
 }
 .circle:before {
   content: "";
@@ -1067,16 +1072,21 @@ ul.navigation-types {
 .operations .circle {
   width: 40px;
   height: 40px;
+  background-color: #fff;
 }
 .operations .circle:before {
   width: 20px;
   height: 20px;
   background-size: 100% 100%;
   color: red;
+  top: 10px;
+  left: 10px;
 }
 .operations .exchange:before {
   width: 16.25px;
   height: 13.78px;
+  left: 12px;
+  top: 12px;
 }
 article h3 {
   font-size: 24px;
@@ -1146,6 +1156,9 @@ article h3 {
   text-align: left;
   border: none;
   color: #fff;
+}
+.submit-section .btn:hover{
+  background: #ffbe04;
 }
 .subscribe-form input[type="text" i] {
   min-width: 400px;
