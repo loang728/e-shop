@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
+
+    //Filters open
+    $(".filters").click(function () {
+      $("form#price-form").toggleClass("show");
+  });
+
+  $(".filter-title").click(function () {
+      // Add the 'hide' class to the parent element
+      var parent = $(this).parent(".filter-section");
+      parent.find(".section-limits").toggleClass("hide");
+      $(this).find(".filter-open").toggleClass("plus");
+  });
+
   // Get the form element
   const filterForm = document.getElementById("price-form");
 

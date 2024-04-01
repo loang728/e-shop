@@ -331,16 +331,7 @@ span.icon {
 
 /*Menus*/
 /* Burger menu*/
-.menu-open {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-  padding: 15px 5px;
-  border-radius: 5px;
-  display: none;
-  margin: 0 0 0 40px;
-}
+.menu-open {position:relative;width: 40px;height: 24px;/* padding: 15px 5px; */border-radius: 0;display: none;/* margin:0 0 0 50px; */}
 .menu-open .burger-line,
 .menu-open .burger-line:before,
 .menu-open .burger-line:after {
@@ -1860,13 +1851,20 @@ nav ul.menu > li.active {
   }
 
   .menu-open {
-    float: right;
+  
+    display:flex;
   }
   ul.menu {
     margin: 0;
     max-width: 100%;
     display: none;
   }
+  .mob-header-wrapper {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 }
 .category-title {
   margin: 20px;
@@ -1952,7 +1950,13 @@ span.text {
   .products article {
     max-width: 100%;
   }
+  .logo {
+    max-width: 400px;
 }
+}
+
+
+
 @media screen and (max-width: 460px) {
   .header-navigate-status .label {
     display: none;
@@ -1960,6 +1964,7 @@ span.text {
   .header-navigate-status span.text {
     font-size: 9px;
   }
+
 }
 @media screen and (max-width: 400px) {
   .header-top .details.contact {
