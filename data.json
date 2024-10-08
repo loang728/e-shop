@@ -1,123 +1,124 @@
 {
-  "data":[ {
-    "id": 1,
-    "title": "Product 1",
-    "filename": "product1.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 5,
-    "price": 249.99,
-    "newPrice": 124.99,
-    "image": "product1.png"
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "filename": "product2.png",
-    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "rating": 3.8,
-    "price": 449.99,
-    "newPrice": 239.99,
-    "image": "product2.png"
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "filename": "product3.png",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "rating": 5,
-    "price": 79.99,
-    "newPrice": 64.99,
-    "image": "product3.png"
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "filename": "product9.png",
-    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "rating": 4.9,
-    "price": 119.99,
-    "newPrice": 99.99,
-    "image": "product4.png"
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "filename": "product5.png",
-    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "rating": 3.5,
-    "price": 39.99,
-    "newPrice": 34.99,
-    "image": "product5.png"
-  },
-  {
-    "id": 6,
-    "title": "Product 6",
-    "filename": "product6.png",
-    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "rating": 4.7,
-    "price": 89.99,
-    "newPrice": 74.99,
-    "image": "product6.png"
-  },
-  {
-    "id": 7,
-    "title": "Product 7",
-    "filename": "product7.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.0,
-    "price": 59.99,
-    "newPrice": 49.99,
-    "image": "product7.png"
-  },
-  {
-    "id": 8,
-    "title": "Product 8",
-    "filename": "product8.png",
-    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "rating": 3.2,
-    "price": 69.99,
-    "newPrice": 54.99,
-    "image": "product8.png"
-  },
-  {
-    "id": 9,
-    "title": "Product 9",
-    "filename": "product9.png",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "rating": 4.5,
-    "price": 99.99,
-    "newPrice": 84.99,
-    "image": "product9.png"
-  },
-  {
-    "id": 10,
-    "title": "Product 10",
-    "filename": "product10.png",
-    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "rating": 3.9,
-    "price": 129.99,
-    "newPrice": 109.99,
-    "image": "product10.png"
-  },{
-    "id": 1,
-    "title": "Product 1",
-    "filename": "product11.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "rating": 4.5,
-    "price": 29.99,
-    "newPrice": 24.99,
-    "image": "product1.png"
-  },
-  {
-    "id": 2,
-    "title": "Product 12",
-    "filename": "product12.png",
-    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "rating": 3.8,
-    "price": 49.99,
-    "newPrice": 39.99,
-    "image": "product2.png"
-  }
-  
-]
+  "data":[
+    {
+      "id": 1,
+      "title": "Кухненски аспиратор за вграждане X100",
+      "filename": "product1.png",
+      "description": "Този мощен и стилен аспиратор е перфектен за всяка модерна кухня. Със своята максимална мощност и тих режим на работа, той ефективно премахва миризмите и влагата.",
+      "rating": 5,
+      "price": 249.99,
+      "newPrice": 124.99,
+      "image": "product1.png"
+    },
+    {
+      "id": 2,
+      "title": "Островен аспиратор OxyAir 900",
+      "filename": "product2.png",
+      "description": "Островен аспиратор с висока мощност и издръжлив дизайн. Лесен за поддръжка, с LED осветление за перфектна видимост при готвене и сензорно управление.",
+      "rating": 3.8,
+      "price": 449.99,
+      "newPrice": 239.99,
+      "image": "product2.png"
+    },
+    {
+      "id": 3,
+      "title": "Класически коминен аспиратор Ventus Pro 700",
+      "filename": "product3.png",
+      "description": "С мощност от 700 куб.м/ч, този класически аспиратор бързо премахва парата и неприятните миризми, оставяйки вашата кухня свежа и чиста.",
+      "rating": 5,
+      "price": 79.99,
+      "newPrice": 64.99,
+      "image": "product3.png"
+    },
+    {
+      "id": 4,
+      "title": "Тих аспиратор Whisper 500",
+      "filename": "product4.png",
+      "description": "Тих и ефективен аспиратор, подходящ за семейни кухни. С функции за автоматично изключване и ниско ниво на шум, този модел е идеален за комфортно готвене.",
+      "rating": 4.9,
+      "price": 119.99,
+      "newPrice": 99.99,
+      "image": "product4.png"
+    },
+    {
+      "id": 5,
+      "title": "Аспиратор за плот Slide&Clean",
+      "filename": "product5.png",
+      "description": "Иновативен аспиратор, който се плъзга нагоре при употреба и се скрива, когато не е нужен. Перфектен за минималистични кухни с модерни технологии.",
+      "rating": 3.5,
+      "price": 39.99,
+      "newPrice": 34.99,
+      "image": "product5.png"
+    },
+    {
+      "id": 6,
+      "title": "Аспиратор с активен въглен Carbon Fresh",
+      "filename": "product6.png",
+      "description": "Аспиратор с филтри с активен въглен за ефективно премахване на миризми и мазнини. Подходящ за кухни, които нямат възможност за отвеждане на въздуха навън.",
+      "rating": 4.7,
+      "price": 89.99,
+      "newPrice": 74.99,
+      "image": "product6.png"
+    },
+    {
+      "id": 7,
+      "title": "Индустриален аспиратор PowerMax 1200",
+      "filename": "product7.png",
+      "description": "С мощност от 1200 куб.м/ч, този индустриален аспиратор е подходящ за големи кухни и професионални среди. Осигурява ефективно отвеждане на пара и дим.",
+      "rating": 4.0,
+      "price": 59.99,
+      "newPrice": 49.99,
+      "image": "product7.png"
+    },
+    {
+      "id": 8,
+      "title": "Куполен аспиратор LuxAir",
+      "filename": "product8.png",
+      "description": "Стилен куполен аспиратор с висока мощност и LED осветление. Подходящ за големи кухни, с функция за рециркулация на въздуха и модерен дизайн.",
+      "rating": 3.2,
+      "price": 69.99,
+      "newPrice": 54.99,
+      "image": "product8.png"
+    },
+    {
+      "id": 9,
+      "title": "Аспиратор за таван SkyFlow",
+      "filename": "product9.png",
+      "description": "С дискретен монтаж на тавана и мощност от 900 куб.м/ч, този аспиратор е перфектен за просторни кухни и кухненски острови, осигуряващ ефективно почистване на въздуха.",
+      "rating": 4.5,
+      "price": 99.99,
+      "newPrice": 84.99,
+      "image": "product9.png"
+    },
+    {
+      "id": 10,
+      "title": "Ретро стил аспиратор RetroVent",
+      "filename": "product10.png",
+      "description": "Ретро стил аспиратор с модерна технология. Идеален за тези, които искат да добавят характер към своята кухня с уникален и стилен дизайн.",
+      "rating": 3.9,
+      "price": 129.99,
+      "newPrice": 109.99,
+      "image": "product10.png"
+    },
+    {
+      "id": 11,
+      "title": "Кухненски аспиратор за вграждане X100 Mini",
+      "filename": "product11.png",
+      "description": "Компактен и мощен аспиратор за малки кухни, който осигурява отлична вентилация и енергийна ефективност на достъпна цена.",
+      "rating": 4.5,
+      "price": 29.99,
+      "newPrice": 24.99,
+      "image": "product11.png"
+    },
+    {
+      "id": 12,
+      "title": "Островен аспиратор OxyAir Mini",
+      "filename": "product12.png",
+      "description": "Компактен островен аспиратор, подходящ за малки кухненски пространства. Лесен за инсталация и поддръжка, с достатъчна мощност за по-малки помещения.",
+      "rating": 3.8,
+      "price": 49.99,
+      "newPrice": 39.99,
+      "image": "product12.png"
+    }
+  ]
 }
